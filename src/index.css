@@ -1,0 +1,90 @@
+/* Global Scheme Vars */
+:root {
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #a0c7e6;
+  --mainBlack: #222;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+}
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--mainBlack);
+  background: var(--mainBackground);
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Zen Antique Soft', serif;
+}
+
+/* Style for Horizontal Alignment of Cards */
+.row{
+ text-align: center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 0 10px;
+  margin:20px auto;
+}
+/* Main heading - Product List */
+h1{
+  margin:20px;
+  text-align: center;
+  color:var(--offWhite);
+  font-family: 'Zen Antique Soft', serif;
+}
+/* Dropdown Wrapper */
+.dropdown-wrapper{
+  width:25%;
+  margin: 0 auto;
+}
+
+/* Single card Design */
+.card {
+  background: var(--mainWhite);
+  margin: 2rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  display: grid;
+  grid-template-rows: auto 1fr; 
+  border-radius: var(--mainBorderRadius);
+  text-align: center;
+  width:300px;
+  padding: 16px;
+}
+.card-title {
+  font-size:1.2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+.card:hover {
+  box-shadow: var(--darkShadow);
+}
+.card img {
+  height: 20rem;
+  width:250px;
+  margin: 0 auto;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
+}
+
+.card-text {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top:10px;
+  line-height: 1.8;
+}
+
